@@ -49,7 +49,7 @@ public class _02_FindingElement {
         String randomText = randomH3.getText();
         System.out.println(randomText);
 
-        // which locaters you use ? sorusu interview ler de sorulabilir. yukardakiler cevap.
+        // which locators you use ? sorusu interview ler de sorulabilir. yukardakiler cevap.
         // eger which one do you prefer to use diye sorulursaa, cevap ID ....
 
         WebElement startPractiseCss = driver.findElement(By.cssSelector("#btn_basic_example"));
