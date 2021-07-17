@@ -24,7 +24,7 @@ public class _02_FindingElement {
         closeIcon.click();                // bu da klik yapmaya yariyor
 
         WebElement startButton = driver.findElement(By.id("btn_basic_example"));
-        String startButtonText = startButton.getText();
+        String startButtonText = startButton.getText();              // a web element has 3 main parts; tags , attributes and texts
         System.out.println(startButtonText);
         startButton.click();
 
@@ -40,7 +40,7 @@ public class _02_FindingElement {
         System.out.println(inputFromText);
 
         WebElement startPractiseButton = driver.findElement(By.partialLinkText("Start Pra"));    // burada full linki yapistirmak zorunda deigiliz. bi kismi yeterli
-                                        // sunun unutmamak lazim. yazdigimiz seyden sadece bi tane olmasi gerekiyor... Keys sensiteve ayrica
+                                        // sunun unutmamak lazim. yazdigimiz seyden sadece bi tane olmasi gerekiyor... Keys sensitive ayrica
 
         String startText = startPractiseButton.getText();
         System.out.println(startText);
@@ -56,7 +56,7 @@ public class _02_FindingElement {
         String startCss = startPractiseCss.getText();
         System.out.println(startCss);
 
-        WebElement randomCss = driver.findElement(By.cssSelector(".head"));     // class name lerde dot operator kullaniyoruz
+        WebElement randomCss = driver.findElement(By.cssSelector(".head"));   //div[class=head]  // class name lerde dot operator kullaniyoruz
         String randomCssText = randomCss.getText();
         System.out.println(randomCssText);
 

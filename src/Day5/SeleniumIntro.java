@@ -19,7 +19,7 @@ public class SeleniumIntro {
         WebElement element = driver.findElement(By.cssSelector("div[class= 'tatsu-inline-text-inner tatsu-align-center']>h1"));
         String text = element.getText();
         System.out.println(text);               //System.out.println( element.getText());     // bunu yaptiktan sonra site de olan text asagida yazdirildi
-        driver.quit();                          // it will quit the browser
+        //driver.quit();                          // it will quit the browser
 
 
 
