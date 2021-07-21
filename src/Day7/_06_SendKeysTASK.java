@@ -5,8 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class _06_SendKeysTASK {             // bu method dedigimiz yazilari istedigimiz yere yazar
+import java.util.Scanner;
+
+public class _06_SendKeysTASK {
     public static void main(String[] args) throws InterruptedException {
+        Scanner scanner = new Scanner(System.in);
+        String num1 = scanner.nextLine();
+        String num2 = scanner.nextLine();
+
         System.setProperty("webdriver.chrome.driver","C:\\Users\\zeynep\\Google Drive\\Selenium\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.seleniumeasy.com/test/basic-first-form-demo.html");
@@ -15,30 +21,33 @@ public class _06_SendKeysTASK {             // bu method dedigimiz yazilari iste
 
         driver.findElement(By.id("at-cv-lightbox-close")).click();
 
-        String message1 = "10";
 
-        WebElement userInput1 = driver.findElement(By.id("sum1"));
-        userInput1.sendKeys(message1);
-        Thread.sleep(2000);
 
-        String message2 = "20";
+        WebElement input1 = driver.findElement(By.id("sum1"));
 
-        WebElement userInput2 = driver.findElement(By.id("sum2"));
-        userInput2.sendKeys(message2);
-        Thread.sleep(2000);
+        WebElement input2 = driver.findElement(By.id("sum2"));
 
-        WebElement showMessageButton = driver.findElement(By.cssSelector("button[onclick='return total']"));
-        showMessageButton.click();
+        WebElement getTotalButton= driver.findElement(By.cssSelector("button[onclick='return total()']"));
 
-//        WebElement displayMessage = driver.findElement(By.id("display"));
-//        String displayText = displayMessage.getText();
+        WebElement sumResult= driver.findElement(By.id("displayvalue"));
 
-//        if (message.equals(displayText)){
-//            System.out.println("Success");
-//        } else {
-//            System.out.println("Failure");
-//        }
-//
-//        driver.quit();
+
+        input1.sendKeys(num1);
+        input2.sendKeys(num2);
+
+        getTotalButton.click();             // bu kismi unutmusum. hata bundan dolayi veriyormus
+
+        Integer element1 = Integer.parseInt(num1);  // 10
+        Integer element2 = Integer.parseInt(num2);  // 20
+        Integer sum = element1 + element2;
+
+        String result = sum.toString();
+        String resultOnPage = sumResult.getText();
+        if (result.equals(resultOnPage)){
+            System.out.println("Success");
+        }else {
+            System.out.println("Fail");
+        }
+        driver.quit();
     }
 }

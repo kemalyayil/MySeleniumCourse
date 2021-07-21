@@ -20,6 +20,7 @@ public class _06_SendKeys {             // bu method dedigimiz yazilari istedigi
         WebElement userInput = driver.findElement(By.id("user-message"));
         userInput.sendKeys(message);
 
+
         WebElement showMessageButton = driver.findElement(By.cssSelector("button[class='btn btn-default']"));
         showMessageButton.click();
 
