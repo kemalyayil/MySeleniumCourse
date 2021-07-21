@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <title>Form</title>
+
+      <style>
+
+        input[type=text] {border: 3px solid red;} <!-- input yazdiktan sonra bosluk birakma->
+
+      </style>
+  </head>
+
+  <body>
+    <form action="/form_submission_url">
+
+      <label> Name:<input type="text" name="name" required></label>  <br> <!-- required yazinca burasi bos birakilamaz yapmis oluyoruz-->
+      <label> Middle Name: <input type="text" name="mname"></label>   <br>
+      <label> LastName: <input type="text" name="lname" required></label> <br>
+
+      <label> Date of Birth: <input type="date" name="dob" required></label> <br>
+
+      <label for= "address"> Address: </label> <br>
+      <textarea id="address" cols="50" rows="10"></textarea> <br> <!-- text area(icine yorum vs yazmak icin) olusturmak icin-->
+
+      <label> Number: <input type="number" name="number" ></label> <br>
+
+      <label> Do you agree? : <input type="checkbox" name="agree" checked required></label> <br>  <!-- checked required yazinca checbox tik koyulan yapmis oluyor-->
+
+      <label> Male <input type="radio" name="sex" value="male"></label> <!-- radio ile  male ve female ekledik/ Sadece biri secilebilir ama illa ki ikisinden biri secilmelidir-->
+      <label> Female <input type="radio" name="sex" value="female"></label> <br>
+
+      <select name="state"> <!-- dropdown list deniyor asagidakine. burada created yaptik. -->
+        <option value="1">New Jersey</option>
+        <option value="2">New York</option>
+        <option value="3">Florida</option>
+        <option value="4">Virginia</option>
+      </select> <br>
+
+      <input type="submit" name="submit">
+
+    </form>
+
+
+  </body>
+</html>
