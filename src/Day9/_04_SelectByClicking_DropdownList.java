@@ -14,8 +14,7 @@ public class _04_SelectByClicking_DropdownList {
             WebDriver driver = new ChromeDriver();
             driver.get("https://www.seleniumeasy.com/test/input-form-demo.html");
 
-            driver.findElement(By.cssSelector("select[name=state]>option"));
-            List<WebElement>stateOptions = driver.findElements(By.cssSelector("select[name=state]>option"));
+            List<WebElement> stateOptions = driver.findElements(By.cssSelector("select[name=state]>option"));
             for (int i = 0; i < stateOptions.size();i++){
                 if (stateOptions.get(i).getText().equals("New York")){
                     stateOptions.get(i).click();
