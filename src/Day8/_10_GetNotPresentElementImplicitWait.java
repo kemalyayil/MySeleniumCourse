@@ -20,6 +20,9 @@ public class _10_GetNotPresentElementImplicitWait {
 
         // if the element is never found, it will not wait forever, it will wait just for 5 seconds!
 
+        // that will wait (for exa;5 seconds) and look for the element before showing "no such element" exception.
+        // selenium interview lerde mutlaka sorulur bu konu.
+
         driver.get("http://the-internet.herokuapp.com/dynamic_loading/2");
 
         WebElement startButton = driver.findElement(By.cssSelector("#start>button"));
