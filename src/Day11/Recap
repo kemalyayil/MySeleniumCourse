@@ -1,0 +1,19 @@
+    Whats the difference btw findElement and findElements?
+        findElements will find list of elements. findElement will find an element
+
+    get vs navigate
+        get waits until the page load
+
+    How do you handle alerts?
+        switchTo().alert()
+
+    What key word do you see in WebPages for dropdown list?
+        select
+            And we use select class to handle dropdown lists.
+                Select select = new Select(driver.findElement(By.cssSelector("select[name=state]")));
+
+
+How do you decide which locator to use first?
+    Id first
+    Css selector for everything else
+    When nothing else works, we use Xpath

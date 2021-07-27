@@ -1,0 +1,6 @@
+
+absolute xpath  Vs  relative xpath
+arasindaki fark su , absolute xpath de , developer lar araya code eklediklerinde, bizim kod calismaz
+ama relative xpath de bu problem olmaz
+
+ayrica , abs xpath de bir slash ile baslar,  relative xpath iki slash ile baslar.
