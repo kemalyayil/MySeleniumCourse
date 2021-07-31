@@ -19,11 +19,11 @@ public class _01_SwitchingToWindow {
         String originalWindowHandle = driver.getWindowHandle();         // bu single window u kontrol eder
 
         WebElement link = driver.findElement(By.xpath("(//a[@target='_blank'])[2]"));   // bunu yapinca yeni link aciliyor.
-        //ama hala line 14 teki sitede kaliyor, yeni ye gecmiyor.
+        //ama hala line 16 daki sitede kaliyor, yeni ye gecmiyor.
         link.click();
 
-        //Get all the window handles useing for-each loop switch to another window
-        Set<String> windowHandles = driver.getWindowHandles();      // Bu ise yeni acilan link te gezinmeyi saglar. line 19 de girisini yaptik.
+        //Get all the window handles using for-each loop switch to another window
+        Set<String> windowHandles = driver.getWindowHandles();      // Bu ise yeni acilan link te gezinmeyi saglar. line 21 de girisini yaptik.
                                                                     // bu multiple window u kontrol eder
 
         for (String handle : windowHandles){
