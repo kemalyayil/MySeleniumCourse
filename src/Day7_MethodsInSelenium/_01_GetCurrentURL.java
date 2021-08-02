@@ -1,8 +1,6 @@
-package Day7;
+package Day7_MethodsInSelenium;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class _01_GetCurrentURL {
