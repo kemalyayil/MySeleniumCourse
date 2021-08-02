@@ -1,4 +1,4 @@
-package Day12;
+package Day12_Click_RightClick_DragAndDrop_HoverOver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
