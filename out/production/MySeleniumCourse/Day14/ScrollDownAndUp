@@ -1,0 +1,7 @@
+    - Scroll nicin gerekli?
+            cunku ulasmak istedigimiz element cok asagida ise , selenyum hemen ulasamadigi icin hata verir.
+            bu yuzden scroll down yapip , codu aratmamiz gerekli.
+    - how can you scroll ?
+        By using JavascriptExecutor
+    - Or , do you know JavascriptExecutor? what is it for?
+        to scroll on a web page.
