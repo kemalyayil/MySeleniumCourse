@@ -1,4 +1,4 @@
-package Day8;
+package Day8_MethodsInSelenium2;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
