@@ -1,0 +1,63 @@
+
+Pros of Using Selenium
+    -Free
+    -Wide range of supported platforms(windows, linux, mac...) and programming languages(Java, Python, C#, Javascript...), browsers(Chrome, Firefox, Safari..)
+    -Huge community
+    -Dominates the market
+
+Cons of Using Selenium
+    -No tech support
+    -Does not support Desktop applications
+    -Does not provide reporting
+
+Things that cannot be automated using Selenium
+-Desktop applications
+-Captcha
+-Automating OTP(One time password)
+
+-Is not creative and won't explore edge cases. An automated test can only do what it's told to do.
+Appium(Mobile apps testing tools)
+
+        Q: What are various ways of locating an element in Selenium?
+
+            ID, className, tagName, CSS Selector, XPath
+
+        Q: Why I cannot find element?
+
+            -The element might be changed
+            -There is a wait issue(page is not fully load)
+            -There might be an iframe
+
+        Q: What is the difference between single slash(/) and double slash(//)?
+
+            Absolute xpath starts with single slash ( / ), starting from root element and all the way to the element.
+            Relative xpath starts with double slash ( // ), starting selection matching anywhere in the document.
+
+        Q: Difference between close() and quit() command?
+            close() to close current window, quit() will quit the browser
+
+        Q: Difference between xpath and css selector?
+            XPath can go backward and forward, CSS can only go forward
+            XPath can locate element by text, CSS cannot
+            CSS is faster, XPath have more combinations
+
+        Q:  How you handle js alerts?
+            • If the alert on the browser comes from JavaScript, we use the Alert class.
+
+        Q: findElement vs findElements?
+           • FindElement > this method returns first WebElement !
+                o gives Exception if the element not found
+           • FindElements > returns List <WebElement>;
+                o does not give Exception if the element not found as a result list has null values
+
+        Q: How do you scroll in Selneium?
+            JavascriptExecutor
+
+        Q: Implicit Wait vs Explicit Wait?
+            Implicit wait is a wait which waits for a specified time while locating an element before throwing
+            “NoSuchElementException”. As by default selenium tries to find elements immediately without any wait. So, it is good to use implicit wait. This wait applied to all elements of the current driver instance.
+
+            Explicit wait is a wait which is applied to a particular web-element until the ExpectedCondition specified is met.
+
+        Q:
+
