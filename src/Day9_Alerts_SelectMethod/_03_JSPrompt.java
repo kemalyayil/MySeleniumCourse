@@ -20,6 +20,7 @@ public class _03_JSPrompt {
 
         driver.switchTo().alert().sendKeys("Hello Techno Study");
 
+
         Thread.sleep(2000);
 
         driver.switchTo().alert().accept();
